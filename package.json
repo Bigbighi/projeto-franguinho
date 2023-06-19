@@ -30,5 +30,12 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.3.4",
     "vite": "^4.3.9"
+  },
+  "vercel": {
+    "routes": [
+      { "src": "/", "dest": "Pages/Home/home.jsx" },
+      { "src": "/login", "dest": "Pages/login/login.jsx" },
+      { "src": "/about", "dest": "Pages/about/about.jsx" }
+    ]
   }
 }
