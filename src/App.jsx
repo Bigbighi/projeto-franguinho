@@ -33,9 +33,9 @@ function App() {
          user={user}/>
 
         <Routes>
-        <Route  exact path='/' element={<Home Number={Number} />}/>
-        <Route exact path='/login' element={<Login User={User}/>}/>
-        <Route exact path='/about' element={<About/>}/>
+        <Route  path='/' element={<Home Number={Number} />}/>
+        <Route path='/login' element={<Login User={User}/>}/>
+        <Route path='/about' element={<About/>}/>
         </Routes>
       </Router>
       
