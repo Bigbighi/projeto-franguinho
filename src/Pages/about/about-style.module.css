@@ -1,0 +1,22 @@
+.container{
+    flex-grow: 1;
+    display: grid;
+    place-items: center;
+    font-family: sans-serif;
+}
+
+.containerAbout{
+    background: #fff;
+    width: 550px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 12px #00000078;
+}
+
+@media (min-width:350px) and (max-width:851px) {
+    .containerAbout{
+        width: 97%;
+    }
+}

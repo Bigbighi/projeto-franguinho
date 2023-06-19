@@ -1,0 +1,190 @@
+
+.nav{
+    background: var(--color);
+    height: 110px;
+    width: 100%;
+}
+
+/*Chicken*/
+div#chicken{
+    margin: auto;
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1100px;
+}
+
+div#chicken img{
+    animation: animation-chicken 1s both ease;
+}
+
+@media (min-width:850px){
+    div#chicken{
+        width: 800px;
+    }
+}
+
+
+@media (min-width: 350px) and (max-width: 850px ) {
+    div#chicken{
+        width: 100%;
+    }
+
+    div#chicken img{
+        width: 80px;
+    }
+}
+
+
+@media (min-width: 851px){ 
+    div#chicken img{
+        width: 100px;
+    }
+}
+
+
+@keyframes animation-chicken {
+    0%{
+        opacity: 0;
+        margin-top: -200px;
+    }
+
+    100%{
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+/*Name*/
+h1.header{
+    color: #fff; 
+    letter-spacing: 2.5px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+/*navigation*/
+div#navigation{
+    margin-left:auto;
+}
+
+div#navigation ul{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    font-family: sans-serif;
+    align-items:center;
+}
+
+div#navigation li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+div#navigation li a:hover{
+    text-decoration:underline;
+}
+
+div#navigation button#LogIn{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-family: sans-serif;
+    font-size: 15px;
+    letter-spacing: 1.1px; 
+    
+}
+
+div#navigation button:hover{
+    box-shadow: 0px 0px 13px 4px #fff;
+    background: var(--color);
+    color: #fff;
+    transition: all 0.3s;
+}
+
+/*Responsive button nav-burguer*/
+
+button.nav-toggle{
+    font-size: 1.5em;
+    margin-left: auto;
+    margin-right: 10px;
+    background: var(--color);
+    border: none;
+    color: #fff;
+}
+
+button.nav-toggle{
+    display: none;
+}
+
+button#close-nav{
+    display: none;
+    border: none;
+    padding: 5px 18px;
+    border-radius: 10px;
+}
+
+.notShow{
+    display: none;
+}
+
+@media (max-width:850px) {
+    button.nav-toggle{
+        display: flex;
+        margin-right: 0px;
+    }
+
+    button.nav-toggle.not-show{
+        display: none;
+    }
+
+    div#navigation ul{
+        margin: 0;
+        margin-top: 80px;
+    }
+
+    .nav-menu{
+        display: none;
+    }
+
+    .nav-menu.show{
+        display: flex;
+    }
+
+    button#close-nav{
+        display: inline-block;
+    }
+
+    .nav-menu.show ul{
+        background: var(--color);
+        padding: 15px;
+        position: relative;
+        border-radius: 10px;
+        top: 50px;
+        flex-direction: column;
+    }
+}
+
+.welcomeUser{
+    color: white;
+    font-size: small;
+    width: 110px;
+}
+
+
+/*AnimationIcons*/
+@keyframes animation-icons {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.icons .link:hover .animation{
+    animation: animation-icons 1s infinite;
+}

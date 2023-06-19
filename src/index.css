@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#root{
+    --color: rgb(66, 25, 25);
+}
+
+body{
+    background: rgb(251, 231, 231);
+}
+
+body, html{
+    height: 100%;
+}
+
+#root{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
